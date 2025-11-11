@@ -1,0 +1,99 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPGP+bpcGtjkcdeiklgiIsS",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/itmxz75/Trabajo-en-clase-1/blob/main/Ejercicio_2_Programas\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 6,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MM4rvQeQ0FpQ",
+        "outputId": "ef8e7749-52ab-444d-d220-0adbbdba6b65"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese el primer número: 4839484738\n",
+            "Ingrese el segundo número: 3843993302\n",
+            "Ingrese el tercer número: 2948923303003\n",
+            "El número mayor es: 2948923303003.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Ejercicio 1: Determinar el mayor de 3 números\n",
+        "num1 = float(input(\"Ingrese el primer número: \"))\n",
+        "num2 = float(input(\"Ingrese el segundo número: \"))\n",
+        "num3 = float(input(\"Ingrese el tercer número: \"))\n",
+        "\n",
+        "if num1 > num2 and num1 > num3:\n",
+        "    mayor = num1\n",
+        "elif num2 > num3:\n",
+        "    mayor = num2\n",
+        "else:\n",
+        "    mayor = num3\n",
+        "\n",
+        "print(f\"El número mayor es: {mayor}\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Ejercicio 2: Verificar si una palabra es palíndromo\n",
+        "palabra = input(\"Ingrese una palabra: \").lower()\n",
+        "palabra_invertida = palabra[::-1]\n",
+        "\n",
+        "if palabra == palabra_invertida:\n",
+        "    print(\"La palabra es un palíndromo.\")\n",
+        "else:\n",
+        "    print(\"La palabra NO es un palíndromo.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JDS3pvgzNqo4",
+        "outputId": "aa20d65d-444c-4b72-91f2-0c05f79148b1"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese una palabra: hola\n",
+            "La palabra NO es un palíndromo.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
